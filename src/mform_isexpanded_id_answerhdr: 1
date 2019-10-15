@@ -1,0 +1,72 @@
+mform_isexpanded_id_answerhdr: 1
+noanswers: 3
+numhints: 2
+id: 19117
+inpopup: 0
+cmid: 
+courseid: 374
+returnurl: /question/edit.php?courseid=374&cat=2732%2C21753&qpage=0&recurse=0&showhidden=1&qbshowtext=1
+scrollpos: 0
+appendqnumstring: 
+qtype: multichoice
+makecopy: 0
+sesskey: HyadbNmBCk
+_qf__qtype_multichoice_edit_form: 1
+mform_isexpanded_id_generalheader: 1
+mform_isexpanded_id_combinedfeedbackhdr: 0
+mform_isexpanded_id_multitriesheader: 0
+mform_isexpanded_id_tagsheader: 0
+mform_isexpanded_id_createdmodifiedheader: 0
+usecurrentcat: 1
+name: Increment model это?
+questiontext[text]: Increment model это?
+questiontext[format]: 1
+questiontext[itemid]: 537243626
+defaultmark: 1
+generalfeedback[text]: 
+generalfeedback[format]: 1
+generalfeedback[itemid]: 942863628
+idnumber: 
+single: 1
+shuffleanswers: 0
+shuffleanswers: 1
+answernumbering: abc
+answer[0][text]: Инкрементная модель
+answer[0][format]: 1
+answer[0][itemid]: 94562366
+fraction[0]: 1.0
+feedback[0][text]: 
+feedback[0][format]: 1
+feedback[0][itemid]: 6147672
+answer[1][text]: Каскадная модель
+answer[1][format]: 1
+answer[1][itemid]: 962726999
+fraction[1]: 0.0
+feedback[1][text]: 
+feedback[1][format]: 1
+feedback[1][itemid]: 355034720
+answer[2][text]: Спиральная модель
+answer[2][format]: 1
+answer[2][itemid]: 542261367
+fraction[2]: 0.0
+feedback[2][text]: 
+feedback[2][format]: 1
+feedback[2][itemid]: 163267523
+correctfeedback[text]: 
+correctfeedback[format]: 1
+correctfeedback[itemid]: 811623089
+partiallycorrectfeedback[text]: 
+partiallycorrectfeedback[format]: 1
+partiallycorrectfeedback[itemid]: 823986170
+incorrectfeedback[text]: 
+incorrectfeedback[format]: 1
+incorrectfeedback[itemid]: 814928880
+penalty: 0.3333333
+hint[0][text]: 
+hint[0][format]: 1
+hint[0][itemid]: 628386613
+hint[1][text]: 
+hint[1][format]: 1
+hint[1][itemid]: 629962168
+tags: _qf__force_multiselect_submission
+submitbutton: Сохранить

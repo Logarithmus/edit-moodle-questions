@@ -1,5 +1,4 @@
 
-use std::collections::HashMap;
 use curl::easy::Form;
 use std::io::Write;
 use curl::easy::Easy;
@@ -107,16 +106,19 @@ fn parse_gear_url(gear_url: &str) -> String {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    const LOGIN_URL: &str = "https://lms2.bsuir.by/login/index.php";
-	const TEST_URL: &[&str] = &[
+    //const LOGIN_URL: &str = "https://lms2.bsuir.by/login/index.php";
+    const QUSTION_URL: &str = "https://lms2.bsuir.by/question/question.php";
+	const TEST_URL: [&str; 6] =
+	[
 		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2732%2C21753",
 		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2774%2C21753",
 		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2775%2C21753",
 		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2776%2C21753",
 		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2801%2C21753",
-		];
-	const COOKIE: &str = "MoodleSession=9qevnnjbgqtle18ladl44oq2lt";
-	for test in TEST_URL {
+		"https://lms2.bsuir.by/question/edit.php?courseid=374&category=2802%2C21753",
+	];
+	const COOKIE: &str = "MoodleSession=rmhhds59riv707ng3qfin2q542";
+	for test in TEST_URL.iter().skip(5) {
 		println!("Test: {}", test);
 		let questions = get_with_cookie(test, COOKIE)?;
 		println!("ПДД: {:?}", questions.find("Дарья"));
@@ -127,7 +129,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 			println!("{}", url);
 			let html = get_with_cookie(&url, COOKIE)?;
 			let form = get_question_form(&html)?;
-			let response = post_with_cookie("https://lms2.bsuir.by/question/question.php", COOKIE, form)?;
+			let response = post_with_cookie(QUSTION_URL, COOKIE, form)?;
 			println!("{}", response.find("Редактировать вопросы").is_some());
 		}
 	}

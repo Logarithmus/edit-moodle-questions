@@ -8,3 +8,4 @@ It works as follows:
 4) make POST request with modified data
 
 It took me several days of reverse engineering. I can't count how many times stupid Moodle refused to accept my requests and just responsed with the same unchanged question page. NO ERRORS AT ALL!!!
+Fortunately, now it works!
